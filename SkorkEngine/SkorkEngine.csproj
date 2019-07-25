@@ -63,6 +63,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="ui\BorderLoader.cs" />
     <Compile Include="window\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -104,6 +105,7 @@
   <ItemGroup>
     <Folder Include="main\" />
     <Folder Include="resources\" />
+    <Folder Include="service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

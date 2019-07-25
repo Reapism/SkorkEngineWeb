@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SkorkEngine.window"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Login - SkorkEngine" Height="450" Width="800">
+    <Grid x:Name="grdWindow">
+        <Grid x:Name="grdNavigation" Margin="0,0,0,353">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFBBBBBB" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TextBlock x:Name="txtblkLogin" HorizontalAlignment="Left" Margin="355,37,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid x:Name="grdLoader" HorizontalAlignment="Left" Height="145" Margin="330,140,0,0" VerticalAlignment="Top" Width="145">
+            <Border x:Name="bdrLoader" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="50,50,0,0" VerticalAlignment="Top" Width="45"/>
+            <Border x:Name="bdrLoader1" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="0,50,0,0" VerticalAlignment="Top" Width="45"/>
+            <Border x:Name="bdrLoader2" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="0" VerticalAlignment="Top" Width="45"/>
+            <Border x:Name="bdrLoader3" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="50,0,0,0" VerticalAlignment="Top" Width="45"/>
+            <Border x:Name="bdrLoader4" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="100,0,0,0" VerticalAlignment="Top" Width="45"/>
+            <Border x:Name="bdrLoader5" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="100,50,0,0" VerticalAlignment="Top" Width="45"/>
+            <Border x:Name="bdrLoader6" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="100,100,0,0" VerticalAlignment="Top" Width="45"/>
+            <Border x:Name="bdrLoader7" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="50,100,0,0" VerticalAlignment="Top" Width="45"/>
+            <Border x:Name="bdrLoader8" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="0,100,0,0" VerticalAlignment="Top" Width="45"/>
+        </Grid>
+
     </Grid>
 </Window>

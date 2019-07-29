@@ -63,6 +63,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="database\DBConnect.cs" />
+    <Compile Include="exception\SkorkDrawException.cs" />
+    <Compile Include="exception\SkorkException.cs" />
+    <Compile Include="service\UpdateService.cs" />
     <Compile Include="ui\BorderLoader.cs" />
     <Compile Include="window\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -105,7 +109,7 @@
   <ItemGroup>
     <Folder Include="main\" />
     <Folder Include="resources\" />
-    <Folder Include="service\" />
+    <Folder Include="test\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

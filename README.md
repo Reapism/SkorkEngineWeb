@@ -21,11 +21,11 @@ framework. This will be slowly developed overtime!
 ### Is the Skork engine open sourced?
 This project itself is open sourced. This refers to the GUI of the Skork Engine, and the interaction with the Skork-Engine 
 framework. The actual Skork framework is **not open sourced** at this time. Since the rebirth of this project, I decided to
-go for a large database route and also focus most on the implementation of the framework.
+go for a large database role by storing all profiles and preferences in the cloud.
 
 ### What is the Skork Engine framework?
-It's the barebones API for parsing text into code, compiling it, interpreting it, and running it! As mentioned above, this
-project is an **implementation** of the Skork framework.
+It's the barebones API for parsing text into code, compiling it, interpreting it, and running it! The Skork framework 
+delegates an amount of resources based on the priortity. This project is an **implementation** of the framework. 
 
 ### What is Skork Engine used for?
 Since its a programming language, technically, its uses are up to you. What makes this simplified programming language

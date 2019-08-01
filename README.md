@@ -1,4 +1,4 @@
-# Skork Engine
+# Skork Engine by Anthony J (Reapism)
 **Skork Engine** is the sequel to the original [Skork](https://github.com/Reapism/Skork) project.
 
 **Skork** (SCORE-K) is a custom programming language for writing a game with rules *you define*. Skork allows you to test code in a 

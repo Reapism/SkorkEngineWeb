@@ -6,7 +6,5 @@
         xmlns:local="clr-namespace:SkorkEngine.window"
         mc:Ignorable="d"
         Title="SkorkEngine" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Grid/>
 </Window>

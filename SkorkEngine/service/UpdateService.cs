@@ -8,14 +8,9 @@
         }
 
         public bool CheckUpdates() {
-
             long dbVersion = 0;
-            if (long.Parse(version.Replace(".",string.Empty)) < dbVersion) {
-                // update is available!
-            }
 
-
-            return true;
+            return (long.Parse(version.Replace(".", string.Empty)) < dbVersion) ? true : false;         
         }
     }
 }

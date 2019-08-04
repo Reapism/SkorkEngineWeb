@@ -19,7 +19,6 @@ namespace SkorkEngine.database {
         }
 
         public static int Query() {
-
             try {
                 SqlConnection connection = new SqlConnection(GetConnectionString());
                 connection.Open();

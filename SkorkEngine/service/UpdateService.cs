@@ -3,7 +3,7 @@
 
         private string version;
 
-        public UpdateService() {s
+        public UpdateService() {
             this.version = "";
         }
 

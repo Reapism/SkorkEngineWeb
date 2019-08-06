@@ -1,7 +1,6 @@
 ﻿using System.Windows;
 
-namespace SkorkEngine
-{
+namespace SkorkEngine.GUI {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>

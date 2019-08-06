@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace SkorkEngine.window {
+namespace SkorkEngine.GUI {
     /// <summary>
     /// Interaction logic for <see cref="LoginWindow"/>.
     /// </summary>

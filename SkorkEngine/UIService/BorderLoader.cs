@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Controls;
 
-namespace SkorkEngine.ui {
+namespace SkorkEngine.UIService {
     public class BorderLoader {
 
         private Border[] borders;

@@ -1,9 +1,9 @@
-﻿namespace SkorkEngine.service {
+﻿namespace SkorkEngine.Service {
     public class UpdateService {
 
         private string version;
 
-        public UpdateService() {
+        public UpdateService() {s
             this.version = "";
         }
 

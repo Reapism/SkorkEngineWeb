@@ -6,5 +6,10 @@
         xmlns:local="clr-namespace:SkorkEngine.GUI"
         mc:Ignorable="d"
         Title="SkorkEngine" Height="450" Width="800">
-    <Grid/>
+    <Grid x:Name="gridRoot">
+        <Grid x:Name="gridMain" Margin="0">
+            <Grid x:Name="gridCode" HorizontalAlignment="Left" Height="100" Margin="224,256,0,0" VerticalAlignment="Top" Width="100"/>
+            <Grid x:Name="gridPlane" HorizontalAlignment="Left" Height="100" Margin="450,264,0,0" VerticalAlignment="Top" Width="100"/>
+        </Grid>
+    </Grid>
 </Window>

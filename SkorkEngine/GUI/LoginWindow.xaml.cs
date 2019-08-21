@@ -8,5 +8,9 @@ namespace SkorkEngine.GUI {
         public LoginWindow() {
             InitializeComponent();
         }
+
+        private void BtnLoginAccount_Click(object sender, RoutedEventArgs e) {
+            new MainWindow().Show();
+        }
     }
 }

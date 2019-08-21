@@ -6,7 +6,7 @@ namespace SkorkEngine.UIService {
 
         private Border[] borders;
         public BorderLoader(params Border[] borders) {
-
+            
         }
 
         public BorderLoader(List<Border> borders) {

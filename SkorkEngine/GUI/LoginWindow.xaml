@@ -41,7 +41,7 @@
                         <GradientStop Color="White"/>
                     </RadialGradientBrush>
                 </Grid.Background>
-                <Button x:Name="btnLoginAccount" Content="Login" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="150" Background="#00000000"/>
+                <Button x:Name="btnLoginAccount" Content="Login" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="150" Background="#00000000" Click="BtnLoginAccount_Click"/>
                 <Button x:Name="btnCreateAccount" Content="Create Account" HorizontalAlignment="Center" Margin="0,75,0,0" VerticalAlignment="Center" Width="150" Background="#00DDDDDD"/>
             </Grid>
         </GroupBox>

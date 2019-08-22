@@ -20,7 +20,7 @@ namespace SkorkEngine.GUI {
         }
 
         private void MenuClean_Click(object sender, RoutedEventArgs e) {
-            List<string> code = CompileService.CleanCode(ref richTextCode);
+            List<string> code = CompileService.ConvertCodeIntoList(ref richTextCode);
 
             foreach (string s in code) {
                 MessageBox.Show(s);

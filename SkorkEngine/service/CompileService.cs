@@ -28,7 +28,7 @@ namespace SkorkEngine.Service {
             }
 
             try {
- parser.CompileSkorkCode(ref lstCode);
+                parser.CompileSkorkCode(ref lstCode);
             }
 
             return

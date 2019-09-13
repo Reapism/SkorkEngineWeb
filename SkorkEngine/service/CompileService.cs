@@ -1,13 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using Skork_Engine_Library.Parse;
+using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Windows.Documents;
 
-using Skork_Engine_Library.Parse;
-
-namespace SkorkEngine.Service {
-    public class CompileService {
-
-
+namespace SkorkEngine.Service
+{
+    public class CompileService
+    {
         /// <summary>
         /// Attempts to compile code from a <see cref="RichTextBox"/>.
         /// 
@@ -15,23 +14,20 @@ namespace SkorkEngine.Service {
         /// </summary>
         /// <param name="richText">The <see cref="RichTextBox"/> that you want to compile.</param>
         /// <returns></returns>
-        public static int CompileCode(ref RichTextBox richText) {
+        public static int CompileCode(List<string> lstCode)
+        {
             SkorkParser parser = new SkorkParser();
 
-            TextRange range = new TextRange(richText.Document.ContentStart, richText.Document.ContentEnd);
-            string[] lines = range.Text.Split('\n');
+            try
+            {
+                return parser.CompileSkorkCode(ref lstCode);
+            }
+            catch
+            {
 
-            List<string> lstCode = new List<string>();
-
-            foreach (string s in lines) {
-                lstCode.Add(s);
             }
 
-            try {
-                parser.CompileSkorkCode(ref lstCode);
-            }
-
-            return
+            return -1;
         }
 
         /// <summary>
@@ -40,21 +36,23 @@ namespace SkorkEngine.Service {
         /// <para>See <see cref="SkorkParser.CompileSkorkCode(ref List{string})"/>
         /// for compiler returns.</para>
         /// </summary>
-        /// <param name="richText">The <see cref="RichTextBox"/> that you want to compile.</param>
+        /// <param name="richTextBox">The <see cref="RichTextBox"/> that you want to compile.</param>
         /// <returns></returns>
-        public static List<string> ConvertCodeIntoList(ref RichTextBox richText) {
+        public static List<string> ConvertCodeIntoList(ref RichTextBox richTextBox)
+        {
             SkorkParser parser = new SkorkParser();
 
-            TextRange range = new TextRange(richText.Document.ContentStart, richText.Document.ContentEnd);
+            TextRange range = new TextRange(richTextBox.Document.ContentStart, richTextBox.Document.ContentEnd);
             string[] lines = range.Text.Split('\n');
 
             List<string> lstCode = new List<string>();
 
-            foreach (string s in lines) {
+            foreach (string s in lines)
+            {
                 lstCode.Add(s);
             }
 
-            return parser.CompileSkorkCode();
+            return lstCode;
         }
 
     }

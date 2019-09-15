@@ -25,7 +25,7 @@
                 </Grid>
             </Grid>
             <Grid x:Name="gridPlane" Margin="400,0,0,0">
-                <Grid x:Name="gridPlaneInner" Margin="5" Background="#6688DFFF"/>
+                <Grid x:Name="gridPlaneInner" Margin="5"/>
             </Grid>
         </Grid>
     </Grid>

@@ -1,6 +1,8 @@
 # Skork Engine by Anthony J (Reapism)
 **Skork Engine** is the sequel to the original [Skork](https://github.com/Reapism/Skork) project.
 
+![image](https://imgur.com/a/JK5j3Ui)
+
 **Skork** (SCORE-K) is a custom programming language for writing a game with rules *you define*. Skork allows you to test code in a 
 visual way using *sprites*. You can visual your code using primitive variables, loops, and sprites. My audience is anyone 
 interested enough to write in a simplified programming language, and visualize code in a different way! Feel free to fork it 

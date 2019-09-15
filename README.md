@@ -1,8 +1,11 @@
 ![image](https://i.imgur.com/yk7Gm3O.png)
-<div align="center">
+<div align="left">
   </a>
     <a href="https://twitter.com/iReapism">
     <img src="https://img.shields.io/badge/twitter-%40iReapism-55acee.svg?style=flat-square">
+  </a>
+    <a href="./LICENSE">
+    <img src="https://img.shields.io/badge/license-apache-blue.svg?style=flat-square">
   </a>
 </div>
 

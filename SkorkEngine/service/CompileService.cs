@@ -1,4 +1,4 @@
-﻿using Skork_Engine_Library.Parse;
+﻿using SkorkEngineAPI.Language.Compile;
 using System.Collections.Generic;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -16,17 +16,8 @@ namespace SkorkEngine.Service
         /// <returns></returns>
         public static int CompileCode(List<string> lstCode)
         {
-            SkorkParser parser = new SkorkParser();
-
-            try
-            {
-                return parser.CompileSkorkCode(ref lstCode);
-            }
-            catch
-            {
-
-            }
-
+            SkorkCompile sc = new SkorkCompile();
+            SkorkParser parser = new SkorkParser(ref lstCode);
             return -1;
         }
 
@@ -40,12 +31,11 @@ namespace SkorkEngine.Service
         /// <returns></returns>
         public static List<string> ConvertCodeIntoList(ref RichTextBox richTextBox)
         {
-            SkorkParser parser = new SkorkParser();
-
             TextRange range = new TextRange(richTextBox.Document.ContentStart, richTextBox.Document.ContentEnd);
             string[] lines = range.Text.Split('\n');
 
             List<string> lstCode = new List<string>();
+            SkorkParser parser = new SkorkParser(ref lstCode);
 
             foreach (string s in lines)
             {

@@ -41,29 +41,65 @@
     <StartupObject>SkorkEngine.GUI.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="Serilog, Version=2.0.0.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Skork Engine Library\Skork Engine Library\bin\Debug\EntityFramework.dll</HintPath>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Serilog.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+    <Reference Include="Serilog.Sinks.Console, Version=3.1.1.0, Culture=neutral, PublicKeyToken=24c2f752a8e58a10, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Skork Engine Library\Skork Engine Library\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Serilog.Sinks.Console.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework, Version=3.12.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+    <Reference Include="Skork.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Skork Engine Library\Skork Engine Library\bin\Debug\nunit.framework.dll</HintPath>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Serilog">
-      <HintPath>..\..\Skork Engine Library\Skork Engine Library\bin\Debug\Serilog.dll</HintPath>
+    <Reference Include="Skork.Exceptions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Exceptions.dll</HintPath>
     </Reference>
-    <Reference Include="Serilog.Sinks.Console">
-      <HintPath>..\..\Skork Engine Library\Skork Engine Library\bin\Debug\Serilog.Sinks.Console.dll</HintPath>
+    <Reference Include="Skork.Language.Compile, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Language.Compile.dll</HintPath>
     </Reference>
-    <Reference Include="Serilog.Sinks.File">
-      <HintPath>..\..\Skork Engine Library\Skork Engine Library\bin\Debug\Serilog.Sinks.File.dll</HintPath>
+    <Reference Include="Skork.Language.Configurations, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Language.Configurations.dll</HintPath>
     </Reference>
-    <Reference Include="Skork Engine Library">
-      <HintPath>..\..\Skork Engine Library\Skork Engine Library\bin\Debug\Skork Engine Library.dll</HintPath>
+    <Reference Include="Skork.Language.Entities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Language.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Skork.Language.Functions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Language.Functions.dll</HintPath>
+    </Reference>
+    <Reference Include="Skork.Language.Parse, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Language.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="Skork.Language.Runtime, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Language.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Skork.Language.Util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Language.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Skork.Logging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Skork.Window.Draw, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Window.Draw.dll</HintPath>
+    </Reference>
+    <Reference Include="Skork.Window.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\Skork.Window.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="SkorkEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\SkorkEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -80,8 +116,9 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="WriteableBitmapEx.Wpf">
-      <HintPath>..\..\Skork Engine Library\Skork Engine Library\bin\Debug\WriteableBitmapEx.Wpf.dll</HintPath>
+    <Reference Include="WriteableBitmapEx.Wpf, Version=1.6.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Skork Engine Library\SkorkEngine\bin\Release\WriteableBitmapEx.Wpf.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +176,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Dependencies\" />
     <Folder Include="Resources\" />
     <Folder Include="Test\" />
   </ItemGroup>

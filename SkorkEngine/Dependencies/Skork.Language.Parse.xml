@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Skork.Language.Parse</name>
+    </assembly>
+    <members>
+        <member name="T:Skork.Language.Parse.SkorkParser">
+            <summary>
+            The <see cref="T:Skork.Language.Parse.SkorkParser"/> class.
+            
+            <para>Contains skork code in <see langword="SkorkReadableFormat"/>
+            ready to be compiled.</para>
+            
+            <para>Use: Instantiate a <see cref="T:Skork.Language.Parse.SkorkParser"/> instance with
+            your formatted or unformatted code in a <see cref="T:System.Collections.Generic.List`1"/> object.
+            </para>
+            
+            <para>Finally, invoke the <see cref="!:Compile.SkorkCompile.CompileSkorkCode(SkorkParser)"/>
+            function.</para>
+            
+            </summary>
+        </member>
+        <member name="P:Skork.Language.Parse.SkorkParser.Code">
+            <summary>
+            Gets the formatted code in a <see cref="T:System.Collections.Generic.List`1"/>.
+            <para>The code in this instance cannot be set once again.</para>
+            <para>You must reinstantiate this instance or use another one in order
+            to set the Code by invoking the constructor.</para>
+            </summary>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.#ctor(System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Instantiates the <see cref="T:Skork.Language.Parse.SkorkParser"/> instance with clean code lines.
+            <para>Cleans the code whether it's needed or not and returns a new 
+            reference to the clean code of type <see cref="T:System.Collections.Generic.List`1"/>.
+            <para>The attempt is to remove trailing spaces and new lines
+            from the code and then putting each potentially valid code line
+            on its own line.</para></para>
+            </summary>
+            <param name="code">The formatted/unformatted code lines in a <see cref="T:System.Collections.Generic.List`1"/></param>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.CleanCode(System.Collections.Generic.List{System.String}@)">
+            <summary>
+            Cleans the code whether it's needed or not and returns a new 
+            reference to the clean code of type <see cref="T:System.Collections.Generic.List`1"/>.
+            <para>The attempt is to remove trailing spaces and new lines
+            from the code and then putting each potentially valid code line
+            on its own line.</para>
+            </summary>
+            <param name="code">The code in the form of a <see cref="T:System.Collections.Generic.List`1"/>.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.ReadUntil(System.String,System.Char,System.Char)">
+            <summary> 
+            Returns a substring from another string from char c1[in], to c2[ex].
+            </summary>
+            <param name="s">The string to read from.</param>
+            <param name="c1">Inclusive begining character.</param>
+            <param name="c2">Exclusive ending character.</param>
+            <returns>The substring from c1(incl.) - c2(excl.), else; null</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.ReadUntil(System.String,System.String,System.Char)">
+            <summary> 
+            Returns a substring from another string from string s1[in], to c2[ex].
+            </summary>
+            <param name="s">The string to read from.</param>
+            <param name="s1">Inclusive begining string.</param>
+            <param name="c2">Exclusive ending character.</param>
+            <returns>The substring from c1(incl.) - c2(excl.), else; null</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.ReadUntil(System.String,System.Char,System.String)">
+            <summary> 
+            Returns a substring from another string from string c1[in], to s2[ex].
+            </summary>
+            <param name="s">The string to read from.</param>
+            <param name="c1">Inclusive begining character.</param>
+            <param name="s2">Exclusive ending string.</param>
+            <returns>The substring from c1(incl.) - c2(excl.), else; null</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.ReadUntil(System.String,System.String,System.String)">
+            <summary> 
+            Returns a substring from another string from string s1[in], to s2[ex].
+            </summary>
+            <param name="s">The string to read from.</param>
+            <param name="s1">Inclusive begining string.</param>
+            <param name="s2">Exclusive ending string.</param>
+            <returns>The substring from s1(incl.) - s2(excl.), else; null</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.ReadBetween(System.String,System.Char,System.Char)">
+            <summary>
+            Reads between first occuring characters in a string
+            </summary>
+            <param name="s">The string.</param>
+            <param name="c1">The first character to encounter</param>
+            <param name="c2">The second character to encounter</param>
+            <returns>The substring between the two characters</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.GetLine(System.String)">
+            <summary>
+            Gets a line from a string from beginning to a carriage-return (\n)
+            </summary>
+            <param name="s">The string.</param>
+            <returns>Returns a substring from s where a new line is contained.</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.SplitString(System.String,System.Char)">
+            <summary>
+            Gets a line from a string from beginning to a specific last
+            occuring character.
+            If character is not found, returns a string
+            </summary>
+            <param name="s">The string.</param>
+            <param name="c">The character to terminate the string.</param>
+            <returns>Returns a substring from s where c is contained.</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.ContainsOnly(System.String,System.Char)">
+            <summary>
+            Determines if the string contains only a specific character.
+            </summary>
+            <param name="s">The string to search.</param>
+            <param name="c">The character to compare.</param>
+            <returns>Returns true if the string contains only the character, false otherwise.</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.DoesNotContain(System.String,System.Char)">
+            <summary>
+            Determines if a character appears in a string. 
+            </summary>
+            <param name="s">The string to search.</param>
+            <param name="c">The character to compare.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.GetLines(System.String)">
+            <summary>
+            Separates a string into a collection.
+            </summary>
+            <param name="s">The string to get lines from.</param>
+            <returns>A string collection of substrings.</returns>
+        </member>
+        <member name="M:Skork.Language.Parse.SkorkParser.ToString">
+            <summary>
+            Returns a string stating the instances hashcode.
+            </summary>
+            <returns>A string containing the hashcode of the instance.</returns>
+        </member>
+    </members>
+</doc>

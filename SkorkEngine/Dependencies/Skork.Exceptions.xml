@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Skork.Exceptions</name>
+    </assembly>
+    <members>
+        <member name="T:Skork.Exceptions.Compile.Syntax.SkorkInvalidNameException">
+            <summary>
+            <para>Thrown when an invalid name for a variable
+            or identifier is used.</para>
+            <see cref="T:Skork.Exceptions.Compile.Syntax.SkorkInvalidNameException"/> is derived from
+            <see cref="T:Skork.Exceptions.SkorkException"/>.
+            </summary>
+        </member>
+        <member name="M:Skork.Exceptions.Compile.Syntax.SkorkInvalidNameException.#ctor(System.String)">
+            <summary>
+            Construct a throwable <see cref="T:Skork.Exceptions.Compile.Syntax.SkorkInvalidNameException"/>.
+            </summary>
+            <param name="msg">The exception.</param>
+        </member>
+        <member name="M:Skork.Exceptions.Compile.Syntax.SkorkInvalidNameException.ToString">
+            <summary>
+            Returns the exception message.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Skork.Exceptions.Compile.Syntax.SkorkSyntaxException">
+            <summary>
+            <para>Thrown when a syntax error is catched
+            during compilation.</para>
+            <para>Contains the line, line number, and message
+            where the exception occured.</para>
+            <see cref="T:Skork.Exceptions.Compile.Syntax.SkorkSyntaxException"/> is derived from
+            <see cref="T:Skork.Exceptions.SkorkException"/>.
+            </summary>
+        </member>
+        <member name="P:Skork.Exceptions.Compile.Syntax.SkorkSyntaxException.LineNumber">
+            <summary>
+            The line number associated with the syntax error.
+            </summary>
+        </member>
+        <member name="P:Skork.Exceptions.Compile.Syntax.SkorkSyntaxException.Line">
+            <summary>
+            The code line that contains the syntax error.
+            </summary>
+        </member>
+        <member name="M:Skork.Exceptions.Compile.Syntax.SkorkSyntaxException.#ctor(System.Int32,System.String,System.String)">
+            <summary>
+            Construct a throwable <see cref="T:Skork.Exceptions.Compile.Syntax.SkorkSyntaxException"/>.
+            </summary>
+            <param name="lineNumber">The line number of the occuring syntax error.</param>
+            <param name="line">The line that caused the exception</param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Skork.Exceptions.Compile.Syntax.SkorkSyntaxException.ToString">
+            <summary>
+            Returns the exception message.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Skork.Exceptions.SkorkException">
+            <summary>
+            The root exception class for the <see langword="SkorkEngine"/>.
+            <para>All other Skork related exception classes are derived from 
+            <see cref="T:Skork.Exceptions.SkorkException"/>.</para>
+            <para><see cref="T:Skork.Exceptions.SkorkException"/> is derived from <see cref="T:System.Exception"/></para>
+            </summary>
+        </member>
+        <member name="M:Skork.Exceptions.SkorkException.#ctor(System.String)">
+            <summary>
+            Construct a throwable <see cref="T:Skork.Exceptions.SkorkException"/>.
+            <para>The root level skork exception.</para>
+            </summary>
+            <param name="msg">The exception.</param>
+        </member>
+        <member name="M:Skork.Exceptions.SkorkException.ToString">
+            <summary>
+            Returns the exception message.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SkorkEngine.Exceptions.Runtime.Draw.SkorkDrawException">
+            <summary>
+            <para>Thrown when an error occurs in drawing
+            the grid.</para>
+            <see cref="T:SkorkEngine.Exceptions.Runtime.Draw.SkorkDrawException"/> is derived from
+            <see cref="T:Skork.Exceptions.SkorkException"/>.
+            </summary>
+        </member>
+        <member name="M:SkorkEngine.Exceptions.Runtime.Draw.SkorkDrawException.#ctor(System.String)">
+            <summary>
+            Construct a throwable <see cref="T:SkorkEngine.Exceptions.Runtime.Draw.SkorkDrawException"/>.
+            </summary>
+            <param name="msg">The exception.</param>
+        </member>
+        <member name="M:SkorkEngine.Exceptions.Runtime.Draw.SkorkDrawException.ToString">
+            <summary>
+            Returns the exception message.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SkorkEngine.Exceptions.Runtime.Draw.SkorkOutOfBoundsException">
+            <summary>
+            <para>Thrown when attempting to access a point that is
+            out of bounds on a <see cref="!:SkorkPlane"/> instance.</para>
+            <see cref="T:SkorkEngine.Exceptions.Runtime.Draw.SkorkOutOfBoundsException"/> is derived from
+            <see cref="T:Skork.Exceptions.SkorkException"/>.
+            </summary>
+        </member>
+        <member name="M:SkorkEngine.Exceptions.Runtime.Draw.SkorkOutOfBoundsException.#ctor(System.String)">
+            <summary>
+            Construct a throwable <see cref="T:SkorkEngine.Exceptions.Runtime.Draw.SkorkOutOfBoundsException"/>.
+            </summary>
+            <param name="msg">The exception.</param>
+        </member>
+        <member name="M:SkorkEngine.Exceptions.Runtime.Draw.SkorkOutOfBoundsException.ToString">
+            <summary>
+            Returns the exception message.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SkorkEngine.Exceptions.Runtime.Entity.SkorkSpriteOverflowException">
+            <summary>
+            <para>Thrown when attempting to create more than the
+            maximum number of allowed sprites.</para>
+            <see cref="T:SkorkEngine.Exceptions.Runtime.Entity.SkorkSpriteOverflowException"/> is derived from
+            <see cref="T:Skork.Exceptions.SkorkException"/>.
+            </summary>
+        </member>
+        <member name="M:SkorkEngine.Exceptions.Runtime.Entity.SkorkSpriteOverflowException.#ctor(System.String)">
+            <summary>
+            Construct a throwable <see cref="T:SkorkEngine.Exceptions.Runtime.Entity.SkorkSpriteOverflowException"/>.
+            </summary>
+            <param name="msg">The exception.</param>
+        </member>
+        <member name="M:SkorkEngine.Exceptions.Runtime.Entity.SkorkSpriteOverflowException.ToString">
+            <summary>
+            Returns the exception message.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SkorkEngine.Exceptions.Runtime.Memory.SkorkOutOfMemoryException">
+            <summary>
+            <para>Thrown when attempting to create memory more
+            than the allocated amount of memory in this
+            <see langword="SkorkEngine"/> instance.</para>
+            <see cref="T:SkorkEngine.Exceptions.Runtime.Memory.SkorkOutOfMemoryException"/> is derived from
+            <see cref="T:Skork.Exceptions.SkorkException"/>.
+            </summary>
+        </member>
+        <member name="M:SkorkEngine.Exceptions.Runtime.Memory.SkorkOutOfMemoryException.#ctor(System.String)">
+            <summary>
+            Construct a throwable <see cref="T:SkorkEngine.Exceptions.Runtime.Memory.SkorkOutOfMemoryException"/>.
+            </summary>
+            <param name="msg">The exception.</param>
+        </member>
+        <member name="M:SkorkEngine.Exceptions.Runtime.Memory.SkorkOutOfMemoryException.ToString">
+            <summary>
+            Returns the exception message.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

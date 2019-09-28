@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Skork.Language.Functions</name>
+    </assembly>
+    <members>
+        <member name="T:Skork.Language.Functions.External.SkorkWho">
+            <summary>
+            The <see cref="T:Skork.Language.Functions.External.SkorkWho"/> class.
+            <para>When invoked on an <see cref="T:Skork.Language.Entities.Template.ISkorkEntity"/>, invokes the objects
+            ToString() method and returns it.</para>
+            </summary>
+        </member>
+        <member name="M:Skork.Language.Functions.External.SkorkWho.Invoke(System.Object)">
+            <summary>
+            If the incoming <paramref name="obj"/> is of 
+            type <see cref="T:Skork.Language.Entities.Template.ISkorkEntity"/>, it will return
+            the result of it's <see langword="object.ToString()"/>.
+            </summary>
+            <param name="obj">The object to get its string information.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Skork.Language.Functions.External.SkorkWho.InvokeHelper(System.Object)">
+            <summary>
+            Helper function for <see cref="M:Skork.Language.Functions.External.SkorkWho.Invoke(System.Object)"/>.
+            </summary>
+            <param name="obj">An optional object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Skork.Language.Functions.Interfaces.ISkorkFunction.Invoke(System.Object)">
+            <summary>
+            Invoke optionally takes a parameter and returns
+            an object.
+            </summary>
+            <param name="obj">An optional object parameter.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

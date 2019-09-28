@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Skork.Language.Util</name>
+    </assembly>
+    <members>
+        <member name="T:Skork.Language.Util.Draw.BitmapUtil">
+            <summary>
+            Contains utility functions for <see cref="T:System.Windows.Media.Imaging.BitmapImage"/>
+            and <see cref="T:System.Windows.Media.Imaging.WriteableBitmap"/>.
+            </summary>
+        </member>
+        <member name="M:Skork.Language.Util.Draw.BitmapUtil.ConvertWriteableBitmapToBitmapImage(System.Windows.Media.Imaging.WriteableBitmap)">
+            <summary>
+            Converts a WritableBitmap instance into a BitmapImage.
+            <para>Returns null if something exceptional occurs.</para>
+            </summary>
+            <param name="writableBitmap">The <see cref="T:System.Windows.Media.Imaging.WriteableBitmap"/> instance.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

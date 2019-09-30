@@ -167,6 +167,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Dependencies\Skork.Data.dll.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -176,9 +177,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Dependencies\" />
     <Folder Include="Resources\" />
     <Folder Include="Test\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\Serilog.dll" />
+    <Content Include="Dependencies\Serilog.Sinks.Console.dll" />
+    <Resource Include="Dependencies\Serilog.Sinks.Console.xml" />
+    <Resource Include="Dependencies\Serilog.xml" />
+    <Content Include="Dependencies\Skork.Data.dll" />
+    <Content Include="Dependencies\Skork.Exceptions.dll" />
+    <Resource Include="Dependencies\Skork.Exceptions.xml" />
+    <Content Include="Dependencies\Skork.Language.Compile.dll" />
+    <Resource Include="Dependencies\Skork.Language.Compile.xml" />
+    <Content Include="Dependencies\Skork.Language.Configurations.dll" />
+    <Resource Include="Dependencies\Skork.Language.Configurations.xml" />
+    <Content Include="Dependencies\Skork.Language.Entities.dll" />
+    <Resource Include="Dependencies\Skork.Language.Entities.xml" />
+    <Content Include="Dependencies\Skork.Language.Functions.dll" />
+    <Resource Include="Dependencies\Skork.Language.Functions.xml" />
+    <Content Include="Dependencies\Skork.Language.Parse.dll" />
+    <Resource Include="Dependencies\Skork.Language.Parse.xml" />
+    <Content Include="Dependencies\Skork.Language.Runtime.dll" />
+    <Resource Include="Dependencies\Skork.Language.Runtime.xml" />
+    <Content Include="Dependencies\Skork.Language.Util.dll" />
+    <Resource Include="Dependencies\Skork.Language.Util.xml" />
+    <Content Include="Dependencies\Skork.Logging.dll" />
+    <Resource Include="Dependencies\Skork.Logging.xml" />
+    <Content Include="Dependencies\Skork.Window.Draw.dll" />
+    <Resource Include="Dependencies\Skork.Window.Draw.xml" />
+    <Content Include="Dependencies\Skork.Window.UI.dll" />
+    <Resource Include="Dependencies\Skork.Window.UI.xml" />
+    <Content Include="Dependencies\SkorkEngine.dll" />
+    <Content Include="Dependencies\WriteableBitmapEx.Wpf.dll" />
+    <Resource Include="Dependencies\WriteableBitmapEx.Wpf.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

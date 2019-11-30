@@ -1,6 +1,4 @@
-using System;
-
-namespace Skork.Web.Models
+namespace SkorkWeb.Models
 {
     public class ErrorViewModel
     {

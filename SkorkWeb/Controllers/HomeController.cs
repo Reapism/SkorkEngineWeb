@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Skork.Web.Models;
+using SkorkWeb.Models;
+using System.Diagnostics;
 
-namespace Skork.Web.Controllers
+namespace SkorkWeb.Controllers
 {
     public class HomeController : Controller
     {
@@ -23,7 +19,17 @@ namespace Skork.Web.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Skork()
         {
             return View();
         }
